@@ -9,16 +9,9 @@ spring:
       driver-class-name: org.mariadb.jdbc.Driver
       url: jdbc:mysql://192.168.0.68:3307/webdb?characterEncoding=utf8
       username: webdb
-      password: '{cipher}AQADUjAitpE15DB+cRy80qCtJB1Xw81GQ5ayF2yqbumM/1+Bntjyatjc/JDrc5ogqwNR2rCKwDl58RgjSRjN6Bd2HcSK36BXCR5TsIuFqKMVXKRFcnvrpiV2PFAVITmH9kPNbDRWYD/ax/WS/GVDUPanyTFa984PUHUIembYgkaAqpQGVAPrReAE3fD75CkXI8eiL3YLSmVzflJpdMlMeAi+Q4QN+PAYJzWfaGHhU/FVTJyafZMUX+hx9FVn2jlVabIFwkMn6RvjQzJn2dM+0S9zojQvjnCnIXvtbYW8FkgWWGMJ4B7+/t2B5ZLmapELBIjl+E5eh9wkTmeZOrryVQ7v4UjnpQsSTf0RRhOpUD222ghtptP0FiOpyy/y41bT/QY=%'
+      password: webdb
 mybatis:
    config-location: classpath:mybatis/configuration.xml
-server:
-   port: 0
-   servlet:
-      context-path: /
-      encoding:
-         charset: UTF-8
-         enabled: true
 eureka:
    instance:
       preferIpAddress: true
@@ -31,4 +24,4 @@ logging:
    pattern:
       console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{5} - %msg%n"
    level:
-      root: INFO   
+      root: INFO
